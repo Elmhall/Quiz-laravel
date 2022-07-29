@@ -122,6 +122,7 @@ class QuizController extends Controller
         // Create the model
         Result::create([
             'name' => $request->get('name'),
+            'quiz_id' => $quiz_id,
             'email' => $request->get('email'),
             'score' => $scoreSum
         ]);

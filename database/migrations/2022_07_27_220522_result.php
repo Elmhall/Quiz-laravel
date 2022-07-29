@@ -15,6 +15,7 @@ class Result extends Migration
     {
         Schema::create('results', function (Blueprint $table) {
             $table->id();
+            $table->unsignedBigInteger('quiz_id');
             $table->string('email');
             $table->string('name');
             $table->integer('score');
